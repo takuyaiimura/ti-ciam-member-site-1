@@ -1,0 +1,35 @@
+
+<div class="wrapper">
+
+    <div class="page-header" data-parallax="true" style="background-image: url('./assets/img/2-back_image.jpg');">
+         <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
+        <div class="filter"></div> 
+        
+        <div fxLayout="row wrap" fxLayoutAlign="space-between" class="shoppingItems" >
+            
+            <div class="itemBox cart" >
+                <app-cart-page></app-cart-page>
+            </div>        
+            
+            <div class="itemBox" *ngFor="let product of products">
+                <div class="swagbox">
+                    <img src="{{product.image}}" class="productImage"><a class="productName">{{ product.name }}</a>
+                    <br>
+                    <br>
+                    <a class="productDesc"> {{ product.description }}</a>
+                    <br>
+                    <a class="productPrice">{{ product.price | currency }}</a>
+                    <br>
+                    <button class="buyButton" mat-raised-button color="#00297A" (click)="addToCart(product)">買い物カゴに追加</button>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+
+
+
+
+</div>

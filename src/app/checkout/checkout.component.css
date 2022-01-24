@@ -1,0 +1,138 @@
+.cdk-overlay-container, .mat-accordion {
+    display: block!important;  
+    z-index: 1000000000 !important;
+  }
+
+  .checkoutShooping{
+    z-index: 1000000000 !important;
+  }
+
+/* .mat-accordion.mat-accordion{
+    z-index: 100000!important;
+}
+
+.checkoutShooping{
+    position: absolute!important;
+    z-index: 10000!important;
+    margin-top: 90px!important;
+    
+} */
+
+.mat-expansion-panel-header-title {
+    color: #00297A!important;
+    min-width: 380px!important;
+}
+
+.accordionTitle{
+    margin-top: auto!important;
+    margin-bottom: auto!important;
+    margin-left: 10px!important;
+
+}
+
+.iconSpacing{
+    margin-right: 10px!important;
+}
+
+.zipfield{
+    font-size: 12px!important;
+    width: 110px!important;
+}
+
+.streetAddress{
+    font-size: 12px!important;
+    width: 200px!important;
+}
+
+.locality{
+    margin-left:10px!important;
+    font-size: 12px!important;
+    width: 200px!important;
+}
+
+.userCountry{
+    width: 100px!important;
+    font-size: 12px!important;
+}
+
+.checkoutName{
+color: #00297A!important;
+font-size: 18px!important;
+font-weight: 600!important;
+
+}
+.cartTotal{
+    margin-left: 305px!important;
+    margin-top: 30px!important;
+}
+
+.checkoutPrice{
+    color: #41414B!important;
+    font-size: 18px!important;
+    font-weight: 400!important;
+    text-align: right!important;
+    margin-left: 205px!important;
+}
+
+.iteminCart{
+    margin-top: 30px!important;
+    margin-bottom: 30px!important;
+}
+
+.mat-expansion-panel-body {
+    max-height: 300px!important;
+    overflow: auto!important;
+}
+
+.checkoutButton{
+    margin-top: 20px!important;
+    margin-bottom: 30px!important;
+    margin-right: 15px!important;
+}
+
+.itemImage{
+    margin: 10px!important;
+    width: 90px!important;
+    height: auto!important;
+}
+
+.paymentForm{
+    color: #41414B!important;
+    margin-left: 10px!important;
+    margin-right: 10px!important;
+    margin-top: 10px!important;
+    margin-bottom: 10px!important;
+    width: 450px!important;
+    height:auto!important;
+    border-radius: 5px!important;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.cardNumber{
+    margin-top: 15px!important;
+    margin-left: 15px!important;
+    width: 300px!important;
+    font-size: 14px!important;
+}
+
+.cardExpiry{
+    /* margin-top: 10px!important; */
+    margin-left: 15px!important;
+    width: 100px!important;
+}
+
+.cardType{
+    margin-left: 15px!important;
+}
+
+.cardText{
+    margin-left: 15px!important;
+    color: #41414B!important;
+    margin-right: 15px!important;
+}
+
+.mat-accordion{
+    display: block!important;
+    
+    z-index: 1!important;
+}

@@ -1,0 +1,395 @@
+.item5{
+
+    background-color: #D7D7DC!important;
+    width: 300px;
+    
+    height: 320px!important;
+    margin: 10px!important;
+    font-size: 12px;
+
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+
+} 
+.item4{
+
+    background-color: #D7D7DC!important;
+    width: 600px;
+    
+    height: 320px!important;
+    margin: 10px;
+    margin-top: 10px!important;
+    font-size: 12px;
+
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+
+} 
+/* .cdk-overlay-container {
+    position: absolute!important;
+    z-index: 1!important; 
+  } */
+
+.fxcontainer3{
+    margin-top: 30px!important;
+}
+
+ .item3{
+
+        background-color: #D7D7DC!important;
+        width: 300px;
+        
+        height: 280px!important;
+        margin: 10px!important;
+        font-size: 12px;
+
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+
+} 
+
+  .editIcon{
+    color: #41414B!important;  
+  }
+
+  .CountryInfoLabel{
+    margin-left: 20px!important;  
+    font-size: 18px!important;
+    color: #41414B!important;
+  }
+
+  .CountryInfo{
+    font-size: 18px!important;
+    margin-left: 20px!important;
+  }
+
+.addressLine1 {
+    color: #00297A!important;
+    
+}
+
+.mat-form-field-infix {
+    width: 220px!important; 
+    border-radius: 5px!important;
+}
+
+.addressInput {
+    margin-left: 15px!important;
+    line-height: 1;
+    font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+    font-size: 14px!important;
+}
+
+.saveButton {
+    height: 25px!important;
+    width: 100px!important;
+    margin: 5px!important;
+    margin-top: 15px!important;
+    font-size: 10px!important;
+    margin-left: 10px!important;
+    border-radius: 5px!important;
+    padding: 2px!important;
+}
+
+.mat-checkbox .mat-checkbox-frame {
+    transform: scale(2);
+    border-width: 1px!important;
+}
+
+.mat-checkbox-checked .mat-checkbox-background {
+    transform: scale(2);
+}
+
+.mat-checkbox-inner-container-no-side-margin {
+    margin-left: 20px!important;
+    margin-right: 20px!important;
+    margin-top: 35px!important;
+}
+
+.uc_logo {
+    margin-left: 10px!important;
+    margin-right: 10px!important;
+    width: 250px!important;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 10px!important;
+    background-color: white!important;
+    border-radius: 5px!important;
+}
+
+.userInfo {
+    font-size: 12px!important;
+}
+
+.accountInfo {
+    font-size: 12px!important;
+}
+
+.mat-checkbox {
+    margin-left: 5px!important;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #00297A!important;
+}
+
+::ng-deep .mat-checkbox-ripple .mat-ripple-element {
+    background-color: #00297A!important;
+}
+
+::ng-deep .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: #00297A!important;
+}
+
+.label.mat-checkbox-layout {
+    margin-right: 0px!important;
+}
+
+.strMFALabel {
+    color: #00297A!important;
+    margin-left: 10px!important;
+}
+
+.checkBox {
+    margin-right: 1px!important;
+}
+
+.generalUserTitle {
+    padding-left: 10px!important;
+    padding-top: 15px!important;
+    color: #00297A!important;
+    /* line-height: 0.5; */
+    font-weight: 800;
+    font-size: 20px!important;
+    margin-top: 20px!important;
+}
+
+.mat-h3, .mat-subheading-2, .mat-typography h3 {
+    letter-spacing: 0.5;
+    margin: 0 0 6px;
+}
+
+.strLabel {
+    color: #41414B!important;
+    text-align: left!important;
+    margin-left: 10px!important;
+    /* line-height: 0.5; */
+    margin-bottom: 10px!important;
+}
+
+.UserLabel {
+    color: #00297A!important;
+    text-align: left!important;
+    margin-left: 10px!important;
+    margin-bottom: 10px!important;
+    /* font-size: 14px!important; */
+    font-weight: 500;
+    /* line-height: 0.5; */
+}
+
+.mat-tab-group {
+    background-color: white;
+    z-index: 1!important;
+    /* width: auto!important; */
+    /* height: 340px!important; */
+    margin: 45px;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    overflow: auto;
+    display: inline-flex;
+    margin-top: 90px!important;
+    margin-bottom: 190px!important;
+}
+
+.item {
+    background-color: #D7D7DC!important;
+    min-width: 300px;
+    /* min-height: 330px; */
+    /* max-width: 400px; */
+    height: 300px!important;
+    margin: 15px!important;
+    font-size: 12px;
+    /* text-align: center; */
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* .mat-tab-group .tabGroup .mat-primary{
+align-content: center!important;
+} */
+
+.tabGroup {
+    position: relative!important;
+    z-index: 3!important;
+    /* display: inline-flex!important; */
+    margin-top: 120px!important;
+    max-height: 900px!important;
+    height: auto!important;
+}
+
+.mat-tab-header {
+    background-color: #00297A!important;
+    padding: 0px;
+    color: white!important;
+    min-width: 50px !important;
+    height: 30px!important;
+    text-align: center;
+    align-items: center;
+}
+
+.mat-tab-label {
+    min-width: 100px!important;
+    padding: 15px;
+    background-color: #00297A!important;
+    color: white!important;
+    opacity: 1!important;
+    text-align: center;
+}
+
+.mat-tab-label.mat-tab-label-active {
+    min-width: 100px!important;
+    padding: 15px;
+    background-color: white!important;
+    color: #00297A!important;
+}
+
+.config {
+    background-color: #8D6E97!important;
+    border-color: #8D6E97!important;
+    color: white!important;
+}
+
+.lang:hover {
+    background-color: #FFC61C!important;
+    border-color: #FFC61C!important;
+    color: white!important;
+}
+
+.btn-primary:focus {
+    background-color: #00297A;
+    border-color: #00297A;
+    color: #FFFFFF;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.btn-primaryr:active {
+    background-color: #FFFFFF;
+    border-color: #00297A;
+    color: #00297A;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.btn-primary:hover {
+    background-color: #FFFFFF;
+    border-color: #00297A;
+    color: #00297A;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.btn-danger2:focus {
+    background-color: #ABD5D6;
+    border-color: #ABD5D6;
+    color: #FFFFFF;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.btn-danger2:active {
+    background-color: #FFFFFF;
+    border-color: #ABD5D6;
+    color: #ABD5D6;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.btn-danger2:hover {
+    background-color: #FFFFFF;
+    border-color: #ABD5D6;
+    color: #ABD5D6;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.btn-reg-danger:active {
+    background-color: #CFB1C1;
+    border-color: #CFB1C1;
+    color: #FFFFFF;
+}
+
+.btn-reg-danger:hover {
+    background-color: #CFB1C1;
+    border-color: #CFB1C1;
+    color: #FFFFFF;
+}
+
+.btn-reg-danger:after :focus {
+    background-color: #2D8C9E;
+    border-color: #2D8C9E;
+    color: #FFFFFF;
+}
+
+.btn-reg-danger {
+    background-color: #2D8C9E;
+    border-color: #2D8C9E;
+    color: #FFFFFF;
+}
+
+.btn {
+    border-radius: 5px!important;
+    
+}
+
+.btn-danger:focus {
+    background-color: #00297A;
+    border-color: #00297A;
+    color: #FFFFFF;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.btn-danger:active {
+    background-color: #FFFFFF;
+    border-color: #00297A;
+    color: #00297A;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.btn-danger:hover {
+    background-color: #FFFFFF;
+    border-color: #00297A;
+    color: #00297A;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.btn-danger2:focus {
+    background-color: #ABD5D6;
+    border-color: #ABD5D6;
+    color: #FFFFFF;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.btn-danger2:active {
+    background-color: #FFFFFF;
+    border-color: #ABD5D6;
+    color: #ABD5D6;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.btn-danger2:hover {
+    background-color: #FFFFFF;
+    border-color: #ABD5D6;
+    color: #ABD5D6;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}

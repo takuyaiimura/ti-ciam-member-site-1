@@ -1,0 +1,21 @@
+.modalTitle{
+    margin: 10px!important
+}
+.desc{
+    margin: 10px!important;
+    color: #41414B!important;
+    font-size: 14px!important;
+}
+.infoItem{
+    /* margin: 15px!important; */
+    /* font-size: 16px!important; */
+    color: #00297A!important;
+}
+.genInfoIcon{
+    color: #00297A!important;
+    margin-right: 10px!important;
+    /* font-size: 16px!important; */
+}
+/* .GenInfoURL{
+    margin: 2px!important;
+} */

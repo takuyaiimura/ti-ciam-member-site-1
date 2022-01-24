@@ -1,0 +1,22 @@
+.cdk-overlay-container {
+  font-size: 12px !important;
+  /* z-index: 1000000000 !important; */
+}
+
+.csm-banner {
+  width: 300px !important;
+  text-align: center !important;
+  align-self: center !important;
+  align-content: center !important;
+}
+
+.LoginForm {
+  color: #00297a;
+  text-align: center !important;
+  width: auto;
+  margin: auto !important;
+}
+
+#okta-sign-in {
+  margin-top: 10px !important;
+}

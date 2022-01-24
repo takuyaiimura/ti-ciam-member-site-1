@@ -1,0 +1,8 @@
+
+<h1 class="cartTitle">買い物かご</h1>
+  
+  <mat-divider></mat-divider>
+
+<div class="shoppingTotal">商品数 :  <a class="NoCartItems">{{this.CartService.intItemCount}}</a></div>
+<a class="btn btn-danger btn-round" class="btn btn-danger btn-round checkoutButton"
+(click)="checkoutCart()"><i class="material-icons">shopping_cart</i>Checkout</a>

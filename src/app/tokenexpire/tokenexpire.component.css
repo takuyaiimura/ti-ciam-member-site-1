@@ -1,0 +1,28 @@
+.mat-dialog-container {
+    border-radius: 5px;
+    color: #00297A!important;
+    background-color: #D7D7DC!important;
+}
+
+.btn-danger:focus {
+    background-color: #00297A;
+    border-color: #00297A;
+    color: #FFFFFF;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.btn-danger:active {
+    background-color: #FFFFFF;
+    border-color: #00297A;
+    color: #00297A;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.btn-danger:hover {
+    background-color: #FFFFFF;
+    border-color: #00297A;
+    color: #00297A;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}

@@ -1,0 +1,138 @@
+<div class="wrapper">
+
+    <div class="page-header" data-parallax="true" style="background-image: url('./assets/img/2-back_image.jpg');">
+        <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
+        <div class="filter"></div>
+
+        <div fxLayout="row wrap" fxLayoutAlign="space-between" class="checkoutShooping">
+
+            <mat-accordion>
+                <mat-expansion-panel [expanded]="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <h1 class="accordionTitle">
+                                <mat-icon class="iconSpacing">local_shipping</mat-icon>1. お客様配送先
+                            </h1>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-form-field class="namefield" appearance="fill">
+                        <mat-label>名前</mat-label>
+                        <input matInput [disabled]="true" value="{{this.GetUserinfoService.strFullname}}">
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field class="zipfield" appearance="fill">
+                        <mat-label>郵便番号</mat-label>
+                        <input matInput value="{{this.GetUserinfoService.UserZip}}" [(ngModel)]='newZip'>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field class="streetAddress" appearance="fill">
+                        <mat-label>住所</mat-label>
+                        <input matInput value="{{this.GetUserinfoService.UserStreetAddress}}" [(ngModel)]='newAddress'>
+                    </mat-form-field>
+                    <mat-form-field class="locality" appearance="fill">
+                        <mat-label>市町村</mat-label>
+                        <input matInput value="{{this.GetUserinfoService.UserLocality}}" [(ngModel)]='newLocality'>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field class="userCountry" appearance="fill">
+                        <mat-label>国</mat-label>
+                        <input matInput [disabled]="true" value="{{this.GetUserinfoService.UserCountry}}">
+                    </mat-form-field>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <h1 class="accordionTitle">
+                                <mat-icon class="iconSpacing">shopping_cart</mat-icon>2. お買い物
+                            </h1>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="itemList" *ngFor="let items of this.arrShoppingitems">
+                        <mat-divider></mat-divider>
+
+                        <div><img src={{items.image}} class="itemImage"></div>
+                        <div class="iteminCart">
+
+                            <a class="checkoutName"> {{ items.name }}</a>
+                            <br>
+                            <a class="checkoutPrice">$ {{ items.price }}</a>
+                        </div>
+                        <mat-divider></mat-divider>
+                    </div>
+                    <h1 class="cartTotal">合計 : $ {{strCheckoutTotal}}</h1>
+                </mat-expansion-panel>
+
+
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <h1 class="accordionTitle">
+                                <mat-icon class="iconSpacing">credit_card</mat-icon>3. クレジットカード
+                            </h1>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <!-- <div class="creditCard" *ngFor="let items of this.arrShoppingitems"> -->
+                        <mat-divider></mat-divider>
+                        <form [formGroup]="paymentForm" class="paymentForm">
+                            <div>
+                                <mat-form-field class="cardNumber" appearance="fill">
+
+                                    <mat-label>クレジットカード番号</mat-label>
+                                    <mat-icon matSuffix>credit_card</mat-icon>
+                                    <input matInput id="cardNumber" name="cardNumber" formControlName="cardNumber">
+                                </mat-form-field>
+                            </div>
+
+                            <div>
+                                <mat-form-field appearance="fill" class="cardExpiry">
+                                    <mat-select formControlName="expiration_month" name="cardExpirationMonth">
+                                        <mat-option value="option" *ngFor="let m of monthList">{{ m + '月'}}</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+
+                                <mat-form-field appearance="fill" class="cardExpiry">
+                                    <mat-select formControlName="expiration_year" name="cardExpirationMonth">
+                                        <mat-option value="option" *ngFor="let key of yearList">{{ key }}</mat-option>
+                                    </mat-select>
+                                    <mat-icon matSuffix>calendar_today</mat-icon>
+                                </mat-form-field>
+
+                                <br>
+                                <mat-form-field appearance="fill" class="cardType">
+                                    <mat-label>カードの種類</mat-label>
+                                    <mat-select>
+                                        <mat-option value="option">
+                                            <img with="30" height="30" src="assets/img/visa.png">
+                                            <a class="cardText">VISA</a>
+                                        </mat-option>
+                                        <mat-option value="option">
+                                            <img with="25" height="25" src="assets/img/mastercard.png">
+                                            <a class="cardText">MASTER CARD</a>
+
+                                        </mat-option>
+                                        <mat-option value="option">
+                                            <img with="30" height="30" src="assets/img/dinersclub.png">
+                                            <a class="cardText">Diners Club</a>
+
+                                        </mat-option>
+                                        <mat-option value="option">
+                                            <img with="30" height="30" src="assets/img/amex.png">
+                                            <a class="cardText">American Express</a>
+
+                                        </mat-option>
+                                    </mat-select>
+                                    <mat-icon matSuffix>card_membership</mat-icon>
+
+                                </mat-form-field>
+                            </div>
+                        </form>
+                        <mat-divider></mat-divider>
+                    <!-- </div> -->
+                </mat-expansion-panel>
+                <a class="btn btn-danger btn-round checkoutButton" (click)="ConfirmOrder()">注文を確定する</a>
+                <a routerLink="/" class="btn btn-danger btn-round checkoutButton">キャンセル</a>
+
+            </mat-accordion>
+        </div>
+    </div>
+</div>

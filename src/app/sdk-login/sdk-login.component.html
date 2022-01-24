@@ -1,0 +1,29 @@
+
+<div class="LoginForm ">
+    <h2 ><a> <img src="assets/img/okta-japan-large.png" class="csm-banner"></a> </h2>
+    
+    <form [formGroup]="loginform" (ngSubmit)="onSubmit()" id="loginpage">
+        <p *ngIf="loginInvalid" class="form_login">
+        </p>
+        <div class="form-group">
+            <mat-form-field appearance="legacy" [style.width.px]=300>
+                <mat-label>ユーザー名</mat-label>
+                <input matInput placeholder="ユーザー名を入力してください" cdkFocusInitial input type="email" class="form-control"
+                    id="username" autocomplete="username" formControlName="username" required appAutoFocusDirective>
+                <mat-icon matSuffix>adb</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field appearance="legacy" [style.width.px]=300>
+                <mat-label>パスワード</mat-label>
+                <input matInput placeholder="パスワードを入力してください" input type="password" class="form-control"
+                    id="exampleInputPassword1" autocomplete="current-password" formControlName="password" required>
+                <mat-icon matSuffix>lock</mat-icon>
+            </mat-form-field>
+        </div>
+        <button id="modal-login-button" type="submit" class="btn btn-primary mt-4 mb-3">Login</button>
+    </form>
+    <link href="https://global.oktacdn.com/okta-signin-widget/5.9.1/css/okta-sign-in.min.css" type="text/css"
+        rel="stylesheet" />
+    <div id="okta-widget-container"></div>
+</div>

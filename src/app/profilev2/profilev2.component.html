@@ -1,0 +1,135 @@
+<!-- <div class="page-header section-dark" style="background-image: url('assets/img/2-back_image.jpg')"></div> -->
+<div class="wrapper">
+
+    <div class="page-header" data-parallax="true" style="background-image: url('./assets/img/2-back_image.jpg');">
+        <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
+        <div class="filter"></div>
+        <mat-tab-group class="tabGroup">
+
+            <!-- <mat-tab label="Okta Swagショップ">
+                <div class="fxcontainer3" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="5px">
+
+
+                    <div class="item4 InactiveUserCount" id="inactiveUser">
+                        <h2><a class="generalUserTitle contentHeading">Okta Swags</a></h2>
+                        <app-swag-list></app-swag-list>
+
+                    </div>
+                    <div class="item5 Authprovider" id="authProvider">
+                        <h2><a class="generalUserTitle contentHeading">その他のリソース</a></h2>
+                        <app-cart-page></app-cart-page>
+                    </div>
+
+                </div>
+
+            </mat-tab> -->
+
+
+            <mat-tab label="ユーザー情報">
+
+                <a class="btn btn-danger btn-round" class="btn btn-danger btn-round saveButton"
+                    (click)="saveModal()">SAVE</a>
+                    
+
+                <div class="fxcontainer" fxLayout="row wrap" fxLayoutAlign="center center">
+                    <div class="item item2 activeUser" id="activeUser">
+                        <h2><a class="generalUserTitle">ユーザー情報</a></h2>
+                        <a class="strLabel userInfo">お名前 : </a>
+                        <a class="UserLabel userInfo">{{this.GetUserinfoService.strFullname}}</a><br>
+                        <a class="strLabel userInfo">Eメール : </a>
+                        <a class="UserLabel userInfo">{{this.GetUserinfoService.UserEmail}}</a><br>
+                        <a class="strLabel userInfo">ユーザーID : </a>
+                        <a class="UserLabel userInfo">{{this.GetUserinfoService.strUserID}}</a><br>
+
+                        <br>
+
+                        <h2><a class="generalUserTitle">アカウント情報</a></h2>
+                        <a class="strLabel accountInfo">ステータス : </a>
+                        <a class="UserLabel accountInfo">{{this.GetUserinfoService.UserStatus}}</a><br>
+                        <a class="strLabel accountInfo">Emailアドレス : </a>
+                        <a class="UserLabel accountInfo">{{this.GetUserinfoService.UserVerifiedEMail}}</a><br>
+                        <!-- <br><br> -->
+                        <a class="strLabel accountInfo">アカウント作成日 :</a>
+                        <a class="UserLabel accountInfo">{{this.GetUserinfoService.UserCreatedDate}}</a><br>
+                        <a class="strLabel accountInfo">パスワード変更日 :</a>
+                        <a class="UserLabel accountInfo">{{this.GetUserinfoService.UserPasswordLastChanged}}</a><br>
+                        <!-- <br><br> -->
+                        <a class="strLabel accountInfo">認証タイプ : </a>
+                        <a class="UserLabel accountInfo">{{this.GetUserinfoService.UserCredType}}</a>
+                        <!-- <br> -->
+                        <a class="strLabel accountInfo">認証基盤名 : </a>
+                        <a class="UserLabel accountInfo">{{this.GetUserinfoService.UserCredName}}</a><br>
+
+                    </div>
+
+                    <div class="item item2 activeUser" id="activeUser">
+                        <h2><a class="generalUserTitle">所在地</a></h2>
+
+                        <mat-form-field class="addressInput" appearance="fill">
+                            <mat-label>住所</mat-label>
+                            <input matInput value={{this.GetUserinfoService.UserStreetAddress}} class="addressLine1" 
+                                (change)="addressUpdated($event)">
+                            <mat-icon matSuffix class="editIcon">mode_edit</mat-icon>
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field class="addressInput" appearance="fill">
+                            <mat-label>市町村</mat-label>
+                            <input matInput value={{this.GetUserinfoService.UserLocality}} class="addressLine1" 
+                                (change)="cityUpdated($event)">
+                            <mat-icon matSuffix class="editIcon">mode_edit</mat-icon>
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field class="addressInput" appearance="fill">
+                            <mat-label>郵便番号</mat-label>
+                            <input matInput value={{this.GetUserinfoService.UserZip}} class="addressLine1" 
+                                (change)="zipUpdated($event)">
+                            <mat-icon matSuffix class="editIcon">mode_edit</mat-icon>
+                        </mat-form-field>
+                        <br>
+                        <a class="CountryInfoLabel">国 : </a>
+                        <a class="UserLabel CountryInfo">{{this.GetUserinfoService.UserCountry}}</a>
+                    </div>
+
+                    <div class="item item2 Authprovider" id="authProvider">
+                        <h2><a class="generalUserTitle">ご契約中のソリューション</a></h2>
+                        <br>
+                        <img src="assets/img/logo_wf.png" class="uc_logo">
+                        <mat-checkbox [checked]="this.GetUserinfoService.UserWF" (change)="WFonChange($event)">
+                        </mat-checkbox>
+                        <br><br><br>
+                        <img src="assets/img/logo_ciam.png" class="uc_logo">
+                        <mat-checkbox [checked]="this.GetUserinfoService.UserCIAM" (change)="CIAMonChange($event)">
+                        </mat-checkbox><br>
+                    </div>
+
+                </div>
+            </mat-tab>
+
+            <mat-tab label="リソース">
+                <div class="fxcontainer3" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="5px">
+                    <div class="item3 " id="activeUser">
+                        <h2><a class="generalUserTitle">リソース</a></h2>
+                        <app-generalinfo></app-generalinfo>
+
+                    </div>
+                    <div class="item3 InactiveUserCount" id="inactiveUser">
+                        <h2><a class="generalUserTitle contentHeading">コンテンツ</a></h2>
+                        <app-oktacontents></app-oktacontents>
+                    </div>
+                    <div class="item3 Authprovider" id="authProvider">
+                        <h2><a class="generalUserTitle contentHeading">その他のリソース</a></h2>
+                        <app-otheroktaresource></app-otheroktaresource>
+                    </div>
+
+                </div>
+
+            </mat-tab>
+
+
+
+        </mat-tab-group>
+
+    </div>
+
+
+</div>

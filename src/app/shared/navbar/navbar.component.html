@@ -1,0 +1,92 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
+        <!---------------------->
+        <!-- Responsive Image -->
+        <!---------------------->
+        <style>
+            .responsive {
+            width: 100%;
+            height: 100%;
+            padding-left: 70px;
+            }
+        </style> 
+        <!---------------------->
+        <!-- Responsive Image -->
+        <!---------------------->
+    
+    <div class="container">
+    
+        
+        <div class="navbar-translate" >           
+            <button  class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()" style="position: absolute; right: 0;">
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+            </button>
+            
+        </div>
+        <div class="navbar-collapse" id="navbarToggler">
+            
+            <ul class="navbar-nav ml-auto">
+                
+                
+                
+                <!-- <li>
+                    <a class="btn btn-danger btn-round" class="btn btn-danger btn-round" id="login" (click)="test()" >test</a>
+                </li> -->
+                <li>
+                    <a href="/home" class="btn btn-danger btn-round" class="btn btn-danger btn-round" id="login" >ホーム</a>
+                </li>
+                <li>
+                    <a routerLink="/profilev2" class="btn btn-danger btn-round" class="btn btn-danger btn-round" id="profile" >プロファイル</a> 
+                </li>              
+                <li>
+                    <a routerLink="/store" class="btn btn-danger btn-round" class="btn btn-danger btn-round" id="profile" >Swagストア</a> 
+                </li>              
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" data-placement="bottom" href="https://twitter.com/okta_japan" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                        <p class="d-lg-none">Twitter</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" data-placement="bottom" href="https://www.facebook.com/Okta/" target="_blank">
+                        <i class="fa fa-facebook-square"></i>
+                        <p class="d-lg-none">Facebook</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" data-placement="bottom" href="https://www.youtube.com/OktaInc" target="_blank">
+                        <i class="fa fa-youtube"></i>
+                        <p class="d-lg-none">YouTube</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" data-placement="bottom" href="https://www.linkedin.com/company/okta-inc-/" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                        <p class="d-lg-none">LinkedIn</p>
+                    </a>
+                </li>        
+                <li>
+                    <a class="btn btn-danger btn-round" class="btn btn-danger btn-round" id="login" (click)="LoginModal()">ログイン (SDK)</a>
+                </li>
+                
+                <!-- <li>
+                    <a class="btn btn-reg-danger btn-round" class="btn btn-danger btn-round" id="register" (click)="registerModal()">アカウント作成</a>
+                </li>              -->
+                
+                <li>
+                    <a class="btn btn-danger btn-round" class="btn btn-danger btn-round" id="login"  id="widget" (click)="widgetModal()" >Widget</a>
+                </li>
+                
+                <li>
+                    <a class="btn btn-reg-danger btn-round" class="btn btn-danger btn-round" id="logout" (click)="OktaLogout()">ログアウト</a>
+                </li>             
+
+                
+                
+
+                
+            </ul>
+        </div>
+    </div>
+</nav>
